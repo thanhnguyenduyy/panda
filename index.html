@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Sinh Nhật Em</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Thiết lập chung cho trang */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+            overflow: hidden;
+            padding: 20px;
+            color: #333;
+        }
+
+        .card {
+            position: relative;
+            width: 90%;
+            max-width: 600px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Nội dung thẻ */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #333;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6b81;
+            animation: pulse 1.5s infinite;
+        }
+
+        .content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Khung bánh sinh nhật */
+        .cake-container {
+            position: relative;
+            margin: 0 auto 20px;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* Bánh sinh nhật */
+        .cake {
+            width: 100px;
+            height: 80px;
+            background: #f8b195;
+            border-radius: 0 0 30px 30px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .cake::before {
+            content: '';
+            width: 120px;
+            height: 10px;
+            background: #ff6b81;
+            border-radius: 10px;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Ngọn nến */
+        .candle {
+            width: 10px;
+            height: 40px;
+            background: #ffec99;
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 3px;
+        }
+
+        /* Ngọn lửa động */
+        .flame {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            width: 10px;
+            height: 15px;
+            background: radial-gradient(circle, #ffdd67 35%, #ff6b6b);
+            border-radius: 50%;
+            animation: flicker 0.2s infinite alternate;
+            transform: translateX(-50%);
+        }
+
+        /* Nút */
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #ff6b81;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #ff4757;
+        }
+
+        /* Hiệu ứng */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes flicker {
+            0% { transform: scale(1) translateX(-50%); }
+            100% { transform: scale(1.1) translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <h1>Chúc Mừng Sinh Nhật Em! 🎂</h1>
+            <p>Chúc em yêu có một ngày sinh nhật thật tuyệt vời và hạnh phúc. Anh hy vọng em luôn rạng rỡ và gặp nhiều may mắn trong tuổi mới. Anh sẽ luôn ở đây, cùng em trải qua mọi niềm vui và thử thách. Yêu em rất nhiều! ❤️</p>
+
+            <!-- Bánh sinh nhật với nến động -->
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút -->
+            <a href="#" class="btn">Xem Lại Kỷ Niệm Của Chúng Ta</a>
+        </div>
+    </div>
+</body>
+</html>
