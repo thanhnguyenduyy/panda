@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Source Sans Pro';
   margin: 0;
 }
 
@@ -260,7 +260,7 @@ body {
   }
 
   .text-box .fake-btn {
-    bottom: -38px;
+    bottom: -50px;
     right: 5px;
   }
 
