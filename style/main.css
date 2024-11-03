@@ -264,6 +264,9 @@ button:hover {
     left: 40%;
   }
 
+}
+
+@media screen and (max-height: 900px) {
   .ten {
     justify-content: unset;
    }
