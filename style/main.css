@@ -263,6 +263,10 @@ button:hover {
   .six .hat {
     left: 40%;
   }
+
+  .ten {
+    justify-content: unset;
+   }
 }
 
 @media screen and (max-height: 800px) {
