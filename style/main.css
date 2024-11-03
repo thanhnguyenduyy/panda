@@ -127,7 +127,7 @@ button:hover {
   left: 41.5%;
   position: absolute;
   /* transform: scale(0.1); */
-  top: -35%;
+  top: -29%;
   width: 80px;
 }
 
@@ -279,7 +279,7 @@ button:hover {
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 32%;
+    left: 52%;
   }
 }
 
@@ -306,8 +306,8 @@ button:hover {
   }
 
   .six .hat {
-    /* top: -20px; */
-    width: 50px;
+    /* top: -30px; */
+    width: 40px;
   }
 
   .wish-hbd {
