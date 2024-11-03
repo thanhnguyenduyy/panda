@@ -1,12 +1,15 @@
 // trigger to play music in the background with sweetalert
-window.addEventListener('load', () => {
-    // Automatically play the music
-    document.querySelector('.song').play();
+document.getElementById('playMusic').addEventListener('click', () => {
+    const audio = document.querySelector('.song');
+    const buttonDiv = document.querySelector('.button-start'); // Lấy thẻ div
 
-    // Start the animation timeline
-    animationTimeline();
+    audio.play().then(() => {
+        buttonDiv.style.display = 'none'; // Ẩn thẻ div
+        animationTimeline(); // Bắt đầu hoạt ảnh nếu âm thanh phát thành công
+    }).catch((error) => {
+        console.error('Error playing audio:', error);
+    });
 });
-
 
 // animation timeline
 const animationTimeline = () => {
@@ -251,7 +254,11 @@ const animationTimeline = () => {
             rotation: 90,
         },
         "+=1"
-    );
+    )
+    .to(".ten", 0.5, {
+        visibility: "visible",
+        opacity: 1
+    });
 
     // Restart Animation on click
     const replyBtn = document.getElementById("replay");

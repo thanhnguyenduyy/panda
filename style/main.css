@@ -11,6 +11,21 @@ body {
   visibility: hidden;
 }
 
+button {
+  background-color: #3085d6; /* Màu xanh cho nút */
+  color: white; /* Màu chữ trắng */
+  border: none; /* Bỏ viền cho nút */
+  padding: 15px 30px; /* Padding cho nút */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Hiển thị con trỏ khi di chuột qua nút */
+  border-radius: 5px; /* Bo góc cho nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+button:hover {
+  background-color: #1e70a3; /* Màu khi di chuột qua nút */
+}
+
 .container {
   height: 100vh;
   margin: 0 auto;
@@ -219,6 +234,24 @@ body {
   font-size: 2rem;
   font-weight: lighter;
 }
+
+.ten {
+  display: flex; /* Sử dụng flexbox để căn giữa */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  height: 100vh; /* Chiều cao bằng 100% chiều cao viewport */
+  width: 100vw; /* Chiều rộng bằng 100% chiều rộng viewport */
+  visibility: hidden; /* Bắt đầu ở trạng thái ẩn */
+  opacity: 0; /* Bắt đầu ở trạng thái mờ */
+  transition: opacity 0.5s ease; /* Thêm hiệu ứng chuyển tiếp cho opacity */
+}
+
+.ten img {
+  max-width: 90%; /* Giới hạn chiều rộng tối đa của ảnh */
+  max-height: 90%; /* Giới hạn chiều cao tối đa của ảnh */
+  object-fit: contain; /* Đảm bảo ảnh không bị méo */
+}
+
 
 #replay {
   cursor: pointer;
