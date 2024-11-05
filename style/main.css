@@ -127,8 +127,8 @@ button:hover {
   left: 41.5%;
   position: absolute;
   /* transform: scale(0.1); */
-  top: -29%;
-  width: 80px;
+  top: -30%;
+  width: 60px;
 }
 
 .baloons img {
@@ -261,14 +261,14 @@ button:hover {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    left: 49.5%;
   }
 
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 844px) {
   .ten {
-    justify-content: unset;
+    justify-content: unset !important;
    }
 }
 
@@ -314,7 +314,12 @@ button:hover {
 
   .six .hat {
     /* top: -30px; */
-    width: 40px;
+    width: 50px;
+    left: 50%;
+  }
+
+  .ten img {
+    justify-content: unset !important;
   }
 
   .wish-hbd {
